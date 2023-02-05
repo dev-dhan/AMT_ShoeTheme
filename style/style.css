@@ -18,6 +18,24 @@
     box-sizing: border-box;
 }
 
+/*Go Up Button CSS*/
+#topBtn{
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  font-size: 16px;
+  width: 50px;
+  height: 50px;
+  background: var(--secondary-color);
+  color: var(--primary-color);
+  border: none;
+  cursor: pointer;
+  display: none;
+  border-radius: 100px;
+  
+}
+
+
 header { 
     font-family: var(--regular);
     padding: 10px 60px 5px 60px;
