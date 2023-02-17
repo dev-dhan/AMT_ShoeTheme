@@ -8,6 +8,8 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style/style.css">
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="style/responsive.css">
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="style/swiper-bundle.min.css">
     <!-- Fontawesome CDN Link -->
@@ -96,12 +98,27 @@
         <div class="content-con-about-us">
             <div class="story-con">
                 <h2>Our Story</h2>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
-                    Commodi iusto et error dignissimos deleniti velit sit, minus ratione libero eligendi deserunt enim, neque soluta, nihil odio voluptatum dolor ea id?
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Libero rerum illum modi itaque quos nulla! Eos ducimus distinctio dignissimos, est pariatur 
-                    commodi harum placeat tempora, officia, natus vitae consequatur molestiae! Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum delectus a 
-                    quis in consequuntur porro quidem, exercitationem mollitia obcaecati accusamus ipsam, eligendi minima. Aliquid quidem porro ipsum 
-                    facere doloremque ut?
+                <p>Welcome to our shoe shop, where we strive to provide you with the perfect pair of shoes for any occasion. Our shop was founded with the vision of creating a 
+                    one-stop-shop for all your footwear needs.
+                </p>
+
+                <p>We offer a wide range of shoes for men, women, and children, ranging from comfortable casual wear to high-end formal footwear. Our selection includes various styles, 
+                    such as sneakers, sandals, boots, loafers, and more, to cater to a diverse range of tastes and preferences.
+                </p>
+
+                <p>At our shoe shop, we prioritize quality and durability, which is why we partner with some of the leading brands in the footwear industry to bring you only the best products.
+                     We also ensure that our prices are competitive, so you get value for your money.
+                </p>
+
+                <p>Our team of knowledgeable and friendly staff is always on hand to assist you in finding the right pair of shoes to meet your needs. Whether you need a pair of comfortable walking shoes, 
+                    the perfect pair of boots for the winter season, or a stylish pair of heels for a special occasion, we are here to help.
+               </p>
+
+               <p>We believe in delivering exceptional customer service, and that's why we offer a hassle-free return policy to ensure that you are satisfied with your purchase. We also provide a range of shoe 
+                care products and accessories to help you maintain the quality and longevity of your shoes.
+                </p>
+
+                <p>At our shoe shop, we are committed to providing you with an unforgettable shopping experience. Come visit us today and discover the perfect pair of shoes for your unique style and needs.
                 </p>
             </div>
 
@@ -126,10 +143,10 @@
                             <div class="shoes">
                                 <div class="card-content">
                                     <div class="card-image">
-                                        <img src="images/shoes-3.png" alt="" class="card-img">
+                                        <img src="images/men-1.png" alt="" class="card-img">
                                     </div>
                                     <h1 class="shoe-name">Casual Shoes</h1>
-                                    <p class="shoe-description">Lorem ipsum dolor sit amet</p>
+                                    <p class="shoe-description">Make every step a stylish one with our comfortable and trendy casual shoes.</p>
                                     <p class="price">₱5,000</p>
                                     <div class="button-shoes">
                                         <a href="#"><button class="button">Order now</button></a>
@@ -142,10 +159,10 @@
                             <div class="shoes">
                                 <div class="card-content">
                                     <div class="card-image">
-                                        <img src="images/shoes-3.png" alt="" class="card-img">
+                                        <img src="images/men-2.png" alt="" class="card-img">
                                     </div>
                                     <h1 class="shoe-name">Running Shoes</h1>
-                                    <p class="shoe-description">Lorem ipsum dolor sit amet</p>
+                                    <p class="shoe-description">Step up your game with our running shoes - the perfect fit for every stride.</p>
                                     <p class="price">₱9,000</p>
                                     <div class="button-shoes">
                                         <a href="#"><button class="button">Order now</button></a>
@@ -158,10 +175,10 @@
                             <div class="shoes">
                                 <div class="card-content">
                                     <div class="card-image">
-                                        <img src="images/shoes-3.png" alt="" class="card-img">
+                                        <img src="images/men-3.png" alt="" class="card-img">
                                     </div>
                                     <h1 class="shoe-name">Sporty Shoes</h1>
-                                    <p class="shoe-description">Lorem ipsum dolor sit amet</p>
+                                    <p class="shoe-description">Get your head in the game with our sporty shoes - built to keep up with your active lifestyle.</p>
                                     <p class="price">₱15,000</p>
                                     <div class="button-shoes">
                                         <a href="#"><button class="button">Order now</button></a>
@@ -308,17 +325,19 @@
         <div class="email-us-details-con">
             <p class="email-us-tagline">Message Us Via Email.
             </p>
-            <p class="email-us-content">Also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 
-                1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software 
-                like Aldus PageMaker including versions of Lorem Ipsum
+            <p class="email-us-content">We would like to invite you to come visit us and see the changes for yourself. Our staff is eager 
+                to serve you and make your next visit a memorable one.
             </p>
+
+            <p class="email-us-content">
+                Thank you for your continued support and loyalty. We look forward to serving you.</p>
         </div>
         <div class="email-us-form">
-            <form>
-                <input placeholder="Full Name" type="text" id="fname"  name="fname"><br>
-                <input placeholder="Email" type="email" id="email" name="email"> <br>
-                <textarea placeholder="Message" name="message" id="message" cols="30" rows="10"></textarea> <br>
-                <input type="submit" value="Email Us" id="submit">
+            <form action="https://formspree.io/f/xyyakyvb" method="POST">
+                <input placeholder="Full Name" type="text" id="fname"  name="Full name" required><br>
+                <input placeholder="Email" type="email" id="email" name="Email" required> <br>
+                <textarea placeholder="Message" name="Message" id="message" cols="30" rows="10" required></textarea> <br>
+                <button type="submit" id="submit">Send</button>
               </form> 
         </div>
     </div>
@@ -357,12 +376,21 @@
     
     <button id="topBtn"><i class="fas fa-arrow-up"></i></button>
 
+    <!-- Messenger Chat Plugin Code -->
+    <div id="fb-root"></div>
+
+    <!-- Your Chat Plugin code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+   
     <!-- Swips JS -->
     <script src="js/swiper-bundle.min.js"></script>
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-    
     <!-- Slider JS -->
     <script src="js/slider.js"></script>
+    <!-- Messenger JS -->
+    <script src="js/messenger.js"></script>
 </body>
 </html>
